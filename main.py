@@ -42,4 +42,6 @@ while uinput.lower() != "stop":
     dm.add_one(firstname,lastname,number)
   elif uinput == '3':
     remove_contact()
+  elif uinput.lower() == "help":
+    print("\n1: Show all contacts. \n2: Add in a contact. \n3: Remove a contact.\nAdding in a contact that already exists will update that previous contact.")
   uinput = get_input()
